@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="io.pivotal.ms.MsApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2015-08-27T00:41:59" hostname="MacBook-Pro.local" time="0.003">
+  <properties/>
+  <testcase name="contextLoads" classname="io.pivotal.ms.MsApplicationTests" time="0.003"/>
+  <system-out><![CDATA[01:41:58.038 [Test worker] DEBUG o.s.t.c.j.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class io.pivotal.ms.MsApplicationTests].
+01:41:58.053 [Test worker] DEBUG o.s.test.context.BootstrapUtils - Instantiating TestContextBootstrapper from class [org.springframework.test.context.support.DefaultTestContextBootstrapper]
+01:41:58.063 [Test worker] DEBUG o.s.t.c.s.DefaultTestContextBootstrapper - Found explicit ContextLoader class [org.springframework.boot.test.SpringApplicationContextLoader] for context configuration attributes [ContextConfigurationAttributes@50419e36 declaringClass = 'io.pivotal.ms.MsApplicationTests', classes = '{class io.pivotal.ms.MsApplication}', locations = '{}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.boot.test.SpringApplicationContextLoader']
+01:41:58.067 [Test worker] DEBUG o.s.t.c.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [io.pivotal.ms.MsApplicationTests]
+01:41:58.069 [Test worker] DEBUG o.s.t.c.s.DefaultTestContextBootstrapper - @TestExecutionListeners is not present for class [io.pivotal.ms.MsApplicationTests]: using defaults.
+01:41:58.076 [Test worker] INFO  o.s.t.c.s.DefaultTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+01:41:58.088 [Test worker] INFO  o.s.t.c.s.DefaultTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@6c9589ed, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@79af5bf1, org.springframework.test.context.support.DirtiesContextTestExecutionListener@2ac3112a, org.springframework.test.context.transaction.TransactionalTestExecutionListener@4892fdfc, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@808dfe2]
+01:41:58.089 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [io.pivotal.ms.MsApplicationTests]
+01:41:58.090 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [io.pivotal.ms.MsApplicationTests]
+01:41:58.092 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [io.pivotal.ms.MsApplicationTests]
+01:41:58.092 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [io.pivotal.ms.MsApplicationTests]
+01:41:58.093 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [io.pivotal.ms.MsApplicationTests]
+01:41:58.093 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [io.pivotal.ms.MsApplicationTests]
+01:41:58.094 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [io.pivotal.ms.MsApplicationTests]
+01:41:58.094 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [io.pivotal.ms.MsApplicationTests]
+01:41:58.095 [Test worker] DEBUG o.s.t.c.s.DependencyInjectionTestExecutionListener - Performing dependency injection for test context [[DefaultTestContext@2927d84c testClass = MsApplicationTests, testInstance = io.pivotal.ms.MsApplicationTests@197acd5d, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@46acce62 testClass = MsApplicationTests, locations = '{}', classes = '{class io.pivotal.ms.MsApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.boot.test.SpringApplicationContextLoader', parent = [null]]]].
+01:41:58.147 [Test worker] DEBUG o.s.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+01:41:58.149 [Test worker] DEBUG o.s.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+01:41:58.149 [Test worker] DEBUG o.s.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+01:41:58.150 [Test worker] DEBUG o.s.core.env.StandardEnvironment - Adding [integrationTest] PropertySource with search precedence immediately lower than [systemEnvironment]
+2015-08-27 01:41:58.357  INFO 27891 --- [    Test worker] o.s.boot.SpringApplication               : Starting application on MacBook-Pro.local with PID 27891 (/Users/shkhan/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot/1.2.4.RELEASE/231f740ec1e7b2b89cb9accef516cb02eb2db44d/spring-boot-1.2.4.RELEASE.jar started by shkhan in /Users/shkhan/work/MS_two)
+2015-08-27 01:41:58.379  INFO 27891 --- [    Test worker] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@671b773a: startup date [Thu Aug 27 01:41:58 BST 2015]; root of context hierarchy
+2015-08-27 01:41:58.505  INFO 27891 --- [    Test worker] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2015-08-27 01:41:58.531  INFO 27891 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'encrypt.CONFIGURATION_PROPERTIES' of type [class org.springframework.cloud.bootstrap.encrypt.KeyProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2015-08-27 01:41:58.531  INFO 27891 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'encryptionBootstrapConfiguration' of type [class org.springframework.cloud.bootstrap.encrypt.EncryptionBootstrapConfiguration$$EnhancerBySpringCGLIB$$d9fafeab] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2015-08-27 01:41:58.590  INFO 27891 --- [    Test worker] o.s.boot.SpringApplication               : Started application in 0.392 seconds (JVM running for 1.139)
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.2.4.RELEASE)
+
+2015-08-27 01:41:58.827 ERROR 27891 --- [    Test worker] c.c.c.ConfigServicePropertySourceLocator : Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/producer/default":Connection refused; nested exception is java.net.ConnectException: Connection refused
+2015-08-27 01:41:58.834  INFO 27891 --- [    Test worker] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@1a164f52: startup date [Thu Aug 27 01:41:58 BST 2015]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@671b773a
+2015-08-27 01:41:59.210  INFO 27891 --- [    Test worker] o.s.cloud.context.scope.GenericScope     : BeanFactory id=17033c78-d752-3e9b-8f24-8a8b67095b0d
+2015-08-27 01:41:59.212  INFO 27891 --- [    Test worker] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2015-08-27 01:41:59.230  INFO 27891 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.RefreshAutoConfiguration$ConfigurationPropertiesRebinderConfiguration' of type [class org.springframework.cloud.autoconfigure.RefreshAutoConfiguration$ConfigurationPropertiesRebinderConfiguration$$EnhancerBySpringCGLIB$$a31c188] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2015-08-27 01:41:59.394  WARN 27891 --- [    Test worker] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2015-08-27 01:41:59.394  INFO 27891 --- [    Test worker] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2015-08-27 01:41:59.400  INFO 27891 --- [    Test worker] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@274b261b
+2015-08-27 01:41:59.557  WARN 27891 --- [    Test worker] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2015-08-27 01:41:59.557  INFO 27891 --- [    Test worker] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2015-08-27 01:41:59.570  INFO 27891 --- [    Test worker] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2015-08-27 01:41:59.576  INFO 27891 --- [    Test worker] io.pivotal.ms.MsApplicationTests         : Started MsApplicationTests in 1.424 seconds (JVM running for 2.124)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

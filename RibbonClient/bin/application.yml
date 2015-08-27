@@ -1,0 +1,23 @@
+server:
+  port: 8990
+
+producer:
+  ribbon:
+    eureka:
+      enabled: true
+    listOfServers: http://localhost:8991,http://localhost:8992,http://localhost:8993
+    Server-List-Refresh-Interval: 2000
+    MaxAutoRetries: 1
+    niws.loadbalancer.rclient.connectionFailureCountThreshold: 2
+    niws.loadbalancer.availabilityFilteringRule.filterCircuitTripped: true
+
+eureka:
+  instance:
+    metadata-map:
+      instanceId: ${spring.application.name}:${spring.application.instance_id:${server.port}}}
+    leaseRenewalIntervalInSeconds: 10
+  client:
+    region: default
+    registry-fetch-interval-seconds: 5
+    availability-zones:
+      default: ${APPLICATION_DOMAIN:${DOMAIN:defaultZone}}
